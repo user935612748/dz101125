@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalculatorButton">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="CalculatorButton.Orange" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="CalculatorButton.Gray" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="CalculatorButton.Black" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="CalculatorButton.Reciprocal" parent="CalculatorButton.Orange">
+        <item name="android:textSize">@dimen/button_reciprocal_text_size</item>
+    </style>
+
+    <style name="CalculatorButton.Landscape">
+        <item name="android:layout_width">@dimen/button_width_landscape</item>
+        <item name="android:layout_height">@dimen/button_height_landscape</item>
+        <item name="android:layout_margin">@dimen/button_margin_landscape</item>
+        <item name="android:textSize">@dimen/button_text_size_landscape</item>
+    </style>
+
+    <style name="CalculatorButton.Orange.Landscape" parent="CalculatorButton.Landscape">
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="CalculatorButton.Gray.Landscape" parent="CalculatorButton.Landscape">
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="CalculatorButton.Black.Landscape" parent="CalculatorButton.Landscape">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="CalculatorButton.Reciprocal.Landscape" parent="CalculatorButton.Orange.Landscape">
+        <item name="android:textSize">@dimen/button_reciprocal_text_size_landscape</item>
+    </style>
+</resources>
