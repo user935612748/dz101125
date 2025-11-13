@@ -33,22 +33,24 @@
         <item name="android:textSize">@dimen/button_text_size_landscape</item>
     </style>
 
-    <style name="CalculatorButton.Orange.Landscape" parent="CalculatorButton.Landscape">
+    <style name="CalculatorButton.Orange.Landscape.Small" parent="CalculatorButton.Landscape">
         <item name="android:backgroundTint">@color/orange</item>
         <item name="android:textColor">@color/gray</item>
     </style>
 
-    <style name="CalculatorButton.Gray.Landscape" parent="CalculatorButton.Landscape">
+    <style name="CalculatorButton.Gray.Landscape.Small" parent="CalculatorButton.Landscape">
         <item name="android:backgroundTint">@color/gray</item>
         <item name="android:textColor">@color/orange</item>
     </style>
 
-    <style name="CalculatorButton.Black.Landscape" parent="CalculatorButton.Landscape">
+    <style name="CalculatorButton.Black.Landscape.Small" parent="CalculatorButton.Landscape">
         <item name="android:backgroundTint">@color/black</item>
         <item name="android:textColor">@color/orange</item>
     </style>
 
-    <style name="CalculatorButton.Reciprocal.Landscape" parent="CalculatorButton.Orange.Landscape">
+    <style name="CalculatorButton.Reciprocal.Landscape.Small" parent="CalculatorButton.Landscape">
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/button_reciprocal_text_size_landscape</item>
     </style>
 </resources>

@@ -5,208 +5,198 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="4dp">
 
     <TextView
         android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:background="@color/beige"
         android:gravity="end|center_vertical"
-        android:padding="12dp"
+        android:padding="8dp"
         android:text="@string/display_default"
         android:textColor="@color/black"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:maxLines="1"
         android:singleLine="true"
         android:ellipsize="end"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="8dp" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_clear_entry"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_clear_entry" />
 
-                    <Button
-                        android:id="@+id/button_clear_entry"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_clear_entry" />
+                <Button
+                    android:id="@+id/button_clear"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_clear" />
 
-                    <Button
-                        android:id="@+id/button_clear"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_clear" />
+                <Button
+                    android:id="@+id/button_backspace"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_backspace" />
 
-                    <Button
-                        android:id="@+id/button_backspace"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_backspace" />
+                <Button
+                    android:id="@+id/button_divide"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_divide" />
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_divide"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_divide" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_reciprocal"
+                    style="@style/CalculatorButton.Reciprocal.Landscape.Small"
+                    android:text="@string/button_reciprocal" />
 
-                    <Button
-                        android:id="@+id/button_reciprocal"
-                        style="@style/CalculatorButton.Reciprocal.Landscape"
-                        android:text="@string/button_reciprocal" />
+                <Button
+                    android:id="@+id/button_square"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_square" />
 
-                    <Button
-                        android:id="@+id/button_square"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_square" />
+                <Button
+                    android:id="@+id/button_sqrt"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_sqrt" />
 
-                    <Button
-                        android:id="@+id/button_sqrt"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_sqrt" />
+                <Button
+                    android:id="@+id/button_multiply"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_multiply" />
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_multiply"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_multiply" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_7"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_7" />
 
-                    <Button
-                        android:id="@+id/button_7"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_7" />
+                <Button
+                    android:id="@+id/button_8"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_8" />
 
-                    <Button
-                        android:id="@+id/button_8"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_8" />
+                <Button
+                    android:id="@+id/button_9"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_9" />
 
-                    <Button
-                        android:id="@+id/button_9"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_9" />
+                <Button
+                    android:id="@+id/button_minus"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_minus" />
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_minus"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_minus" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_4"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_4" />
 
-                    <Button
-                        android:id="@+id/button_4"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_4" />
+                <Button
+                    android:id="@+id/button_5"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_5" />
 
-                    <Button
-                        android:id="@+id/button_5"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_5" />
+                <Button
+                    android:id="@+id/button_6"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_6" />
 
-                    <Button
-                        android:id="@+id/button_6"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_6" />
+                <Button
+                    android:id="@+id/button_plus"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_plus" />
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_plus"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_plus" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_1"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_1" />
 
-                    <Button
-                        android:id="@+id/button_1"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_1" />
+                <Button
+                    android:id="@+id/button_2"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_2" />
 
-                    <Button
-                        android:id="@+id/button_2"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_2" />
+                <Button
+                    android:id="@+id/button_3"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_3" />
 
-                    <Button
-                        android:id="@+id/button_3"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_3" />
+                <Button
+                    android:id="@+id/button_equals"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_equals" />
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_equals"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_equals" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="0dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/button_plus_minus"
+                    style="@style/CalculatorButton.Black.Landscape.Small"
+                    android:text="@string/button_plus_minus" />
 
-                    <Button
-                        android:id="@+id/button_plus_minus"
-                        style="@style/CalculatorButton.Black.Landscape"
-                        android:text="@string/button_plus_minus" />
+                <Button
+                    android:id="@+id/button_0"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_0" />
 
-                    <Button
-                        android:id="@+id/button_0"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_0" />
+                <Button
+                    android:id="@+id/button_decimal"
+                    style="@style/CalculatorButton.Gray.Landscape.Small"
+                    android:text="@string/button_decimal" />
 
-                    <Button
-                        android:id="@+id/button_decimal"
-                        style="@style/CalculatorButton.Gray.Landscape"
-                        android:text="@string/button_decimal" />
-
-                    <Button
-                        android:id="@+id/button_percent"
-                        style="@style/CalculatorButton.Orange.Landscape"
-                        android:text="@string/button_percent" />
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/button_percent"
+                    style="@style/CalculatorButton.Orange.Landscape.Small"
+                    android:text="@string/button_percent" />
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 </LinearLayout>
