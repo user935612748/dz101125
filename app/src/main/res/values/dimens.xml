@@ -4,7 +4,7 @@
     <dimen name="max_width">450dp</dimen>
     
     <dimen name="display_width">350dp</dimen>
-    <dimen name="display_height">100dp</dimen>
+    <dimen name="display_height">80dp</dimen>
     <dimen name="display_padding">16dp</dimen>
     <dimen name="display_text_size">32sp</dimen>
     
@@ -17,7 +17,7 @@
     <dimen name="main_padding_landscape">8dp</dimen>
     <dimen name="max_width_landscape">600dp</dimen>
     
-    <dimen name="display_width_landscape">550dp</dimen>
+    <dimen name="display_width_landscape">500dp</dimen>
     <dimen name="display_height_landscape">80dp</dimen>
     <dimen name="display_padding_landscape">12dp</dimen>
     <dimen name="display_text_size_landscape">28sp</dimen>
@@ -25,6 +25,6 @@
     <dimen name="button_width_landscape">80dp</dimen>
     <dimen name="button_height_landscape">40dp</dimen>
     <dimen name="button_margin_landscape">4dp</dimen>
-    <dimen name="button_text_size_landscape">16sp</dimen>
+    <dimen name="button_text_size_landscape">18sp</dimen>
     <dimen name="button_reciprocal_text_size_landscape">14sp</dimen>
 </resources>
